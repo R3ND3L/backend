@@ -21,7 +21,7 @@ const options: any = '?retryWrites=true&w=majority';
 // const databaseUrl: string = process.env.MONGODB_URI || ""
 
 
-const databaseUrl: string = process.env.MONGODB_URI || `mongodb+srv://${username}:${password}@${cluster}${options}`;
+const databaseUrl: string = process.env.MONGODB_URI || `mongodb+srv://newUser:newUser@cluster0.amwexkw.mongodb.net/test?retryWrites=true&w=majority`;
 console.log(`DB uri: ${databaseUrl}`)
 let db: Connection;
 // const client = new MongoClient(databaseUrl, );
@@ -40,3 +40,5 @@ function connectDB(): void {
 export {
     connectDB, db
 }
+
+

@@ -12,7 +12,7 @@ import { router } from './routes';
 
 const app: Application = express();
 
-dotenv.config({ path: './../.env' })
+dotenv.config({ path: './../.env.local' })
 
 const PORT = process.env.PORT || 8080;
 
